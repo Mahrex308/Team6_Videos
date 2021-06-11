@@ -13,10 +13,10 @@ int main(){
   Episodio ep1_1("Con que suenan los peces?",1);
   Episodio ep2_1("Persiguiendo luciernagas",2);
   
-  Episodio ep1_2=Episodio("Se un capitan",1);
-  Episodio ep2_2=Episodio("Hacemos jabon",2);
-  Episodio ep1_22=Episodio("Descenso",1);
-  Episodio ep2_22=Episodio("Bienvenido a segunda",2);
+  Episodio ep1_2("Se un capitan",1);
+  Episodio ep2_2("Hacemos jabon",2);
+  Episodio ep1_22("Descenso",1);
+  Episodio ep2_22("Bienvenido a segunda",2);
 
   Episodio * eps1[2] = {&ep1,&ep2};
   Episodio * eps2[2] = {&ep1_1,&ep2_1};

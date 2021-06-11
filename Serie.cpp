@@ -23,6 +23,7 @@ Serie::Serie(){
     ptr_temporadas = new Temporada*[1];
 }
 
+ 
 Serie::Serie(int id_p, string nomVid, string gen, int anio, int dur, int numtemp, int numep, Temporada ** temps, int t_reg){
     id = id_p;
     tipoVideo = "Serie";
@@ -56,6 +57,7 @@ Temporada Serie::getTemporada(int n){
 Temporada ** Serie::getPtr_Temporadas(){
     return ptr_temporadas;
 }
+
 
 void Serie::setNum_temporadas(int nt){
     if(nt < 1){
@@ -94,4 +96,43 @@ void Serie::setTemporada(int n , Temporada * t){
     }
 
     
+}
+
+void Serie::setPtr_temporadas(Temporada ** nw_temp, int t){
+    ptr_temporadas = nw_temp;
+    num_temp_reg = t;
+    num_temp_mem = t;
+}
+
+
+void Serie::muestraDatos(){
+    cout << "Informacion de Video:      " << endl;
+    cout << "ID de Video:               " << id << endl;
+    cout << "Tipo de Video:             " << tipoVideo << endl;
+    cout << "Nombre de Video:           " << nombreVideo << endl;
+    cout << "Genero:                    " << genero  << endl;
+    cout << "Calificacion:              " << calificacion  << endl;
+    cout << "Anio de Lanzamiento:       " << anioLanzamiento  << endl;
+    cout << "Duracion por episodio:     " << duracion  << " minutos" <<endl;
+    cout << "Numero temporadas:         " << num_temporadas << endl;
+    cout << "Numero episodios:          " << num_episodios << endl;
+    cout <<" " << endl;
+    cout << "Temporadas registradas:    " << endl;
+    cout <<" " << endl;
+     for (int i = 0; i< num_temp_reg; i++){
+         cout << "Informacion temporada:    " << endl;
+        (*ptr_temporadas[i]).print();
+    }
+}
+
+
+
+float Serie::calificaVideo(){
+    float calif = 0;
+    for (int i = 0; i< num_temp_reg; i++){
+        calif = calif + (*ptr_temporadas[i]).getCalificacion_temp();
+    }
+    calificacion = calif/(float)num_temp_reg;
+    return calificacion;
+
 }

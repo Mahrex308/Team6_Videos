@@ -8,10 +8,10 @@ int main(){
   Pelicula p1(1,"Avengers","Ciencia Ficcion",2012,142,"PG-13");
   Pelicula p2(2,"Avatar","Ciencia Ficcion",2009,162,"PG-13");
   
-  Episodio ep1= Episodio("Los Monstruos no hacen cosquillas",1);
-  Episodio ep2= Episodio("Todo el mundo tiene un secreto",2);
-  Episodio ep1_1=Episodio("Con que suenan los peces?",1);
-  Episodio ep2_1=Episodio("Persiguiendo luciernagas",2);
+  Episodio ep1("Los Monstruos no hacen cosquillas",1);
+  Episodio ep2("Todo el mundo tiene un secreto",2);
+  Episodio ep1_1("Con que suenan los peces?",1);
+  Episodio ep2_1("Persiguiendo luciernagas",2);
   
   Episodio ep1_2=Episodio("Se un capitan",1);
   Episodio ep2_2=Episodio("Hacemos jabon",2);

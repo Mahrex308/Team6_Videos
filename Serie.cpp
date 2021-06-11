@@ -23,7 +23,6 @@ Serie::Serie(){
     num_episodios = 0;
     ptr_temporadas = new Temporada*[1];
 }
- 
 
 Serie::Serie(int id_p, string nomVid, string gen, int anio, int dur, int numtemp, int numep, Temporada ** temps, int t_reg){
     id = id_p;
@@ -40,10 +39,8 @@ Serie::Serie(int id_p, string nomVid, string gen, int anio, int dur, int numtemp
     calificacion = calificaVideo();
 }
 
-
 int Serie::getNum_temporadas(){return num_temporadas;}
 int Serie::getNum_episodios(){return num_episodios;}
-
 
 Temporada Serie::getTemporada(int n){
     if ((n > 0) && (n <= num_temp_reg)){;
@@ -57,11 +54,9 @@ Temporada Serie::getTemporada(int n){
 
 }
 
-
 Temporada ** Serie::getPtr_Temporadas(){
     return ptr_temporadas;
 }
-
 
 void Serie::setNum_temporadas(int nt){
     if(nt < 1){
@@ -73,7 +68,6 @@ void Serie::setNum_temporadas(int nt){
 
 }
 
-
 void Serie::setNum_episodios_total(int n_ep){
     if(n_ep < 1){
         cout << "El numero de episodios no se actualizo, el minimo es un episodio" << endl;;
@@ -83,7 +77,6 @@ void Serie::setNum_episodios_total(int n_ep){
     }
 
 }
-
 
 void Serie::setTemporada(int n , Temporada * t){
 

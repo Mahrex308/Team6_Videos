@@ -37,6 +37,7 @@ int main(){
   Serie s2(4,"Club de Cuervos","Comedia",2015,45,6,35,temps2,2);
   
   Video * videos[4] = {&p1, &p2, &s1, &s2};
+  //Creando Videoteca Y Agregando videos
   cout << "Creando Videoteca y agregando series y peliculas" << endl;
   Videoteca v1 = Videoteca(videos, 4);
 

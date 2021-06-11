@@ -9,7 +9,6 @@
 #include <iostream>
 using namespace std;
 
-
 Serie::Serie(){
     id = 0;
     nombreVideo = "Sin nombre" ;

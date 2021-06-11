@@ -104,13 +104,11 @@ void Serie::setTemporada(int n , Temporada * t){
     
 }
 
-
 void Serie::setPtr_temporadas(Temporada ** nw_temp, int t){
     ptr_temporadas = nw_temp;
     num_temp_reg = t;
     num_temp_mem = t;
 }
-
 
 void Serie::muestraDatos(){
     cout << "Informacion de Video:      " << endl;
@@ -131,7 +129,6 @@ void Serie::muestraDatos(){
         (*ptr_temporadas[i]).print();
     }
 }
-
 
 float Serie::calificaVideo(){
     float calif = 0;

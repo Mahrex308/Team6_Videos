@@ -5,8 +5,8 @@ using namespace std;
 
 int main(){
   
-  Pelicula p1=Pelicula(1,"Avengers","Ciencia Ficcion",2012,142,"PG-13");
-  Pelicula p2=Pelicula(2,"Avatar","Ciencia Ficcion",2009,162,"PG-13");
+  Pelicula p1(1,"Avengers","Ciencia Ficcion",2012,142,"PG-13");
+  Pelicula p2(2,"Avatar","Ciencia Ficcion",2009,162,"PG-13");
   
   Episodio ep1= Episodio("Los Monstruos no hacen cosquillas",1);
   Episodio ep2= Episodio("Todo el mundo tiene un secreto",2);

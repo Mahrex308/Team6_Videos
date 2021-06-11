@@ -33,8 +33,8 @@ int main(){
   Temporada * temps1[2] = {&t1,&t2};
   Temporada * temps2[2] = {&t11,&t22};
 
-  Serie s1 = Serie(3,"El Internado Laguna Negra","Suspenso",2007,75,5,38,temps1,2);
-  Serie s2 = Serie(4,"Club de Cuervos","Comedia",2015,45,6,35,temps2,2);
+  Serie s1(3,"El Internado Laguna Negra","Suspenso",2007,75,5,38,temps1,2);
+  Serie s2(4,"Club de Cuervos","Comedia",2015,45,6,35,temps2,2);
   
   Video * videos[4] = {&p1, &p2, &s1, &s2};
   cout << "Creando Videoteca y agregando series y peliculas" << endl;

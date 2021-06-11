@@ -24,8 +24,8 @@ int main(){
   Episodio * eps4[2] = {&ep1_22,&ep2_22};
 
 
-  Temporada t1=Temporada(1,4,18,eps1,2);
-  Temporada t2=Temporada(2,5,20,eps2,2);
+  Temporada t1(1,4,18,eps1,2);
+  Temporada t2(2,5,20,eps2,2);
   
   Temporada t11=Temporada(1,3,24,eps3,2);
   Temporada t22=Temporada(2,5,11,eps4,2);

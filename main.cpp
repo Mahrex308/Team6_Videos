@@ -57,8 +57,7 @@ int main(){
   cout << "Evaluando temporada 2 de serie El Internado Laguna Negra " << endl;
   t2.calificaTemporada();
   cout << " " << endl;
-
-
+  
   cout << "Evaluando temporada 1 de serie Club de Cuervos " << endl;
   t11.calificaTemporada();
   cout << " " << endl;
@@ -72,18 +71,5 @@ int main(){
   v1.enlistar();
   cout << "Fin de inventario" << endl;
   return 0;
-  
-    cout << "Evaluando temporada 1 de serie Club de Cuervos " << endl;
-  t11.calificaTemporada();
-  cout << " " << endl;
-  cout << "Evaluando temporada 2 de serie Club de Cuervos " << endl;
-  t22.calificaTemporada();
-  s1.calificaVideo();
-  s2.calificaVideo();
 
-  cout << "" <<endl;
-  cout << "Inventario completo" <<endl;
-  v1.enlistar();
-  cout << "Fin de inventario" << endl;
-  return 0;
 };

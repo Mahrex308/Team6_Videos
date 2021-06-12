@@ -31,4 +31,8 @@ void Episodio::print(){
     cout << "Nombre de Episodio:         " <<nom_episodio <<endl;
     cout << "Numero de Episodio:         " << num_episodio << endl;
     cout << "   " << endl;
+void Episodio::print(){
+    cout << "Nombre de Episodio:         " <<nom_episodio <<endl;
+    cout << "Numero de Episodio:         " << num_episodio << endl;
+    cout << "   " << endl;
 }

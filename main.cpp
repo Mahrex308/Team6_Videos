@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-  
+  //Creando peliculas,series (episodios&temporadas)
   Pelicula p1(1,"Avengers","Ciencia Ficcion",2012,142,"PG-13");
   Pelicula p2(2,"Avatar","Ciencia Ficcion",2009,162,"PG-13");
   
@@ -41,6 +41,7 @@ int main(){
   cout << "Creando Videoteca y agregando series y peliculas" << endl;
   Videoteca v1 = Videoteca(videos, 4);
 
+  //calificar videos
   cout << "Calificaciones de 1 a 5" << endl;
    cout << " " << endl;
   cout << "Evaluando pelicula Avengers" << endl;
@@ -66,6 +67,7 @@ int main(){
   s1.calificaVideo();
   s2.calificaVideo();
 
+  //Enlistar
   cout << "" <<endl;
   cout << "Inventario completo" <<endl;
   v1.enlistar();

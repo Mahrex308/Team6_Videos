@@ -1,4 +1,7 @@
-
+#include "Temporada.h"
+#include <string>
+#include <iostream>
+using namespace std;
 
 Temporada::Temporada(){
     num_temporada = 0;

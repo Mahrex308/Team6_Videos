@@ -14,8 +14,8 @@ class Videoteca{
     Videoteca();
     Videoteca(int);
     Videoteca( Video **, int );
-
-    int getTamano();
+    
+    int getTamano();    
     Video ** getInventario();
 
     void setInventario( Video **, int);

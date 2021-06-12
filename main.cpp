@@ -29,7 +29,7 @@ int main(){
   
   Temporada t11(1,3,24,eps3,2);
   Temporada t22(2,5,11,eps4,2);
-
+  
   Temporada * temps1[2] = {&t1,&t2};
   Temporada * temps2[2] = {&t11,&t22};
 
